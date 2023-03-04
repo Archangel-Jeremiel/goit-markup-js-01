@@ -138,26 +138,34 @@ console.log('Операция завершена'); */
 - В резyльтате вывести сообщение "Оформлен заказ на сyммy [сyмма] со скидкой [скидка]"
 */
 
-const totalSpend = 9000;
-let payment = 500;
+/* let totalSpend = 110;
+let payment = 100;
 let discount = 0;
 
-if (totalSpend >= 100 && totalSpend <=1000) {
-    let discount = 2;
-    console.log(`Бронзовый партнёр, скидка ${discount}%`)
-} else if (totalSpend >= 1001 && totalSpend <=5000) {
-    let discount = 5;
-    console.log(`Серебренный партнёр, скидка ${discount}%`)
-} else if (totalSpend > 5001) {
-    let discount = 10;
-    console.log(`Золотой партнёр, скидка ${discount}%`)
+if (totalSpend >= 100 && totalSpend < 1000) {
+    discount = 0.02;
+    console.log(`Бронзовый партнёр, скидка 2%`);
+} else if (totalSpend >= 1000 && totalSpend < 5000) {
+    discount = 0.05;
+    console.log(`Серебренный партнёр, скидка 5%`);
+} else if (totalSpend >= 5000) {
+    discount = 0.1;
+    console.log(`Золотой партнёр, скидка 10%`);
 } else {
-    let discount = 0;
-    console.log(`Не партнёр, скидка ${discount}%`)
+    console.log(`Не партнёр, скидка 0%`);
 }
 
-console.log(`Оформлен заказ на сyммy ${payment - discount} со скидкой ${discount}`)
+payment -= payment * discount;
+//payment = payment - payment * discount;
+console.log(`Оформлен заказ на сyммy ${payment} со скидкой ${discount * 100}%`);
+
+totalSpend = totalSpend + payment;
+
+console.log(`Общая сyмма потраченная в магазине: ${totalSpend}`); */
 
 
+let productName = "Droid";
+let pricePerItem = 2000;
 
-
+productName = "Repair droid";
+pricePerItem = 3500;
