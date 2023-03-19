@@ -84,7 +84,7 @@ let total = 0;
 // 2 делаем цыкл на четные числа 
 for (let i = min; i <= max; i +=1 ) {
 
-    //Делаем остаток от деления (если 5 % 2 тогда бyдет 1 потомyчто в 5 влезет две двойки и останется 1 или 6 % 3 бyдет 0 потомy что в 6 влезет две ) 
+    //Делаем остаток от деления (если 5 % 2 тогда бyдет 1 потомyчто в 5 влезет две двойки и останется 1 или 6 % 3 бyдет 0 потомy что в 6 влезет две тройки) 
     if (i % 2 === 0) {
         console.log('четное: ', i)
 
@@ -141,7 +141,7 @@ console.log('Операция завершена'); */
 /* let totalSpend = 110;
 let payment = 100;
 let discount = 0;
-
+ 
 if (totalSpend >= 100 && totalSpend < 1000) {
     discount = 0.02;
     console.log(`Бронзовый партнёр, скидка 2%`);
@@ -164,8 +164,239 @@ totalSpend = totalSpend + payment;
 console.log(`Общая сyмма потраченная в магазине: ${totalSpend}`); */
 
 
-let productName = "Droid";
-let pricePerItem = 2000;
+/* let productName = "Droid";
+let pricePerItem = 2000;   
 
 productName = "Repair droid";
-pricePerItem = 3500;
+pricePerItem = 3500; */
+
+
+/* const clients = ["hffgg", "Poly", "Ajax", "Poly", "Mango"];
+const lastElementIndex = clients.length - 1;
+console.log(lastElementIndex); // 2
+console.log(clients[lastElementIndex]); // "Ajax" */
+
+
+
+/* const clients = ["Mango", "Ajax", "Poly"];
+
+for (let i = 0; i < clients.length; i += 1) {
+  console.log(clients[i]);
+} */
+
+
+
+/* const clients = ["Mango", "Ajax", "Poly"];
+
+for (const client of clients) {
+  console.log(client);
+}
+
+const string = "javascript";
+
+for (const character of string) {
+  console.log(character);
+} */
+
+
+/* const clients = ["Mango", "Poly", "Ajax"];
+const clientNameToFind = "Poly";
+let message;
+
+for (const client of clients) {
+  // На каждой итерации будем проверять совпадает ли элемент массива с
+  // именем клиента. Если совпадает то мы записываем в message сообщение
+  // об успехе и делаем break чтобы не искать дальше
+  if (client === clientNameToFind) {
+    message = "Клиент с таким именем есть в базе данных!";
+    break;
+  }
+
+  // Если они не совпадают то запишем в message сообщение об отсутствии имени
+  message = "Клиента с таким именем нету в базе данных!";
+}
+
+console.log(message); // "Клиент с таким именем есть в базе данных!"
+
+
+
+const clients = ["Mango", "Poly", "Ajax"];
+const clientNameToFind = "Poly";
+let message = "Клиента с таким именем нету в базе данных!";
+
+for (const client of clients) {
+  if (client === clientNameToFind) {
+    message = "Клиент с таким именем есть в базе данных!";
+    break;
+  }
+  // Если не совпадает, то на этой итерации ничего не делаем
+}
+
+console.log(message); // Клиент с таким именем есть в базе данных! */
+
+
+
+/* const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+const threshold = 15;
+
+// Для чисел меньше чем порог срабатывает continue, выполнение тела прекращается
+// и управление передаётся на следующую итерацию.
+for (let i = 0; i < numbers.length; i += 1) {
+  if (numbers[i] < threshold) {
+    continue;
+  }
+
+  console.log(`Число больше чем ${threshold}: ${numbers[i]}`); // 18, 29, 34
+} 
+ */
+
+/* const a = ["Mango"];
+// Так как a это массив, в b записывается ссылка на уже существующий
+// массив в памяти. Теперь a и b указывают на один и тот же массив.
+const b = a;
+console.log(a); // ["Mango"]
+console.log(b); // ["Mango"]
+
+// Изменим массив, добавив еще один элемент, используя указатель из a
+a.push("Poly");
+console.log(a); // ["Mango", "Poly"]
+
+// b также изменилось, потому что b, как и a,
+// просто содержит ссылку на одно и то же место в памяти
+console.log(b); // ["Mango", "Poly"]
+
+// Результат повторяется
+b.push("Ajax");
+console.log(a); // ["Mango", "Poly", "Ajax"]
+console.log(b); // ["Mango", "Poly", "Ajax"] */
+
+
+
+/* const name = "Mango";
+console.log(name.split("")); // ["M", "a", "n", "g", "o"]
+
+const message = "JavaScript это интересно";
+console.log(message.split(" ")); // ["JavaScript", "это", "интересно"] */
+
+
+/* const words = ["JavaScript", "это", "интересно"];
+console.log(words.join("")); // "JavaScriptэтоинтересно"
+console.log(words.join(" ")); // "JavaScript это интересно"
+console.log(words.join(" - ")); // "JavaScript-это-интересно" */
+
+
+/* const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+console.log(clients.indexOf("Poly")); // 2
+console.log(clients.indexOf("Monkong")); // -1 */ 
+
+
+/* const numbers = [];
+
+numbers.push(1);
+console.log(numbers); // [1]
+
+numbers.push(2);
+console.log(numbers); // [1, 2]
+
+numbers.push(3);
+console.log(numbers); // [1, 2, 3]
+
+numbers.push(4);
+console.log(numbers); // [1, 2, 3, 4]
+
+numbers.push(5);
+console.log(numbers); // [1, 2, 3, 4, 5] */
+
+
+/* //Задача пощитать общую сумму покупок (В данном примере используется цикл FOR но правильнее использовать FOR OF (Ниже пояснение))
+/* const cart = [4, 6, 82, 345, 33, 76, 45, 77, 12];
+//2 Обьявить переменную total до цикла (Потомучто если обьявить переменную внутри цикла она будет видна только внутри цикла и за пределами цикла будет не видна по этому сначала обьявляется переменну потом проходит цикл и потом она используется)
+let total = 0;
+//1 Перебрать масив
+for (let i=0; i < cart.length; i+=1) {
+    console.log(cart[i]);
+// 3 Каждия елемент приплюсовать  к total
+    total += cart[i];
+} 
+console.log('Total:', total); */
+
+/* const cart = [4, 6, 82, 345, 33, 76, 45, 77, 12];
+let total = 0;
+
+// for of используется в том случае исли не нужно имень доступ к счетчику и не нужно перезаписывать елемент масива(cart i не нужно изменять тоесть внутри каждого елемента масива переопределить его значение задача ниже)
+for (const value of cart) {
+    total += value;
+}
+console.log('Total:', total); */
+
+//Задача нужно добавить ПДВ на каждую еденицу покупки 10% (для этого нам нужно обратится к каждому елементу масива и переопределить его, используем цикл for)
+/* const cart = [4, 6, 82, 345, 33, 76, 45, 77, 12];
+for (let i = 0; i < cart.length; i += 1) {
+    cart[i] = Math.round(cart[i] * 1.1)
+}
+console.table(cart) */
+//если елемент масива изменяется for если не изменяется for of */
+
+
+
+
+// 1 вари
+/* const min = 6;
+const max = 45;
+let total = 0;
+// 2 делаем цыкл на четные числа 
+for (let i = min; i <= max; i +=1 ) {
+
+    //Делаем остаток от деления (если 5 % 2 тогда бyдет 1 потомyчто в 5 влезет две двойки и останется 1 или 6 % 3 бyдет 0 потомy что в 6 влезет две тройки) 
+    if (i % 2 === 0) {
+        console.log('четное: ', i)
+
+        total += i;
+    }
+    
+}
+console.log(total); */
+// 3 добавляем читные числа
+
+// 4 лог
+
+/* 
+for (let i = 7; i <= i * 9; i += i + 1 ) {
+    console.log(i);
+} */
+
+//Задача напиши скрипт который подсчитывает сумму всех четных чисел в массиве
+
+/* const numbers = [1, 4, 6, 3, 7, 56, 2, 8, 1, 4];
+let total = 0;
+for (let i = 0; i < numbers.length; i += 1) {
+    console.log(numbers[i])
+    if (numbers[i] % 2 === 0) {
+        console.log('четное: ')
+        total += numbers[i];
+    }
+}
+console.table('Total: ', total); */
+
+// Привильнее решить задачу через for of
+/* const numbers = [1, 4, 6, 3, 7, 56, 2, 8, 1, 4];
+let total = 0;
+for(const number of numbers) {
+    if (number % 2 === 0) {
+        console.log('четное: ')
+        total += number;
+    }
+}
+console.table('Total: ', total); */
+
+
+//Задача найти самое большое число массива
+const nambers = [3, 234, 1, 45, 12, 14, 144, 123, 43, 15];
+let biggestNamber = nambers[0];
+
+for (const namber of nambers) {
+    if (namber > biggestNamber) {
+        biggestNamber = namber;
+    }
+}
+console.log(biggestNamber);
