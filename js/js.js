@@ -390,7 +390,7 @@ for(const number of numbers) {
 console.table('Total: ', total); */
 
 
-//Задача найти самое большое число массива
+/* //найти самое большое число массива
 const nambers = [3, 234, 1, 45, 12, 14, 144, 123, 43, 15];
 let biggestNamber = nambers[0];
 
@@ -399,4 +399,156 @@ for (const namber of nambers) {
         biggestNamber = namber;
     }
 }
-console.log(biggestNamber);
+console.log(biggestNamber); */
+
+/* function checkIfCanAccessContent(subType) {
+  const canAccessContent = subType; // Change this line
+
+  return canAccessContent;
+} */
+
+/* var word = "Пляшок";
+var count = 9;
+while (count > 0) {
+  console.log(count + " " + word + " пива на столі");
+  console.log(count + " " + word + " пива,");
+  console.log("Візьми одну, і випий її,");
+  count -= 1;   
+
+  if (count > 0) {
+    console.log(count + " " + word + " пива на столі");
+  } else {
+    console.log("Немає більше " + word + " пива на столі");
+  }
+} */
+
+/* var word = "Пляшок";
+var count = 5;
+while (count > 0) {
+  if (count > 0) {
+    console.log(count + " " + word + " пива на столі");
+    console.log(count + " " + word + " пива,");
+    console.log("Візьми одну, і випий її,");    
+    count -= 1;
+  } else {
+    console.log("Немає більше " + word + " пива на столі");
+  }
+} */
+
+/* var locations1 = 3;
+var locations2 = 4;
+var locations3 = 5;
+
+var guess;
+var guesses = 0;
+var hits = 0;
+
+var isSunk = false;
+
+
+while (isSunk == false) {
+  guess = prompt("Морський бій! Готуйсь, цілься, стріляй! (виберіть номер від 0-6)(корабель на 3 клітинках):");
+
+  if (guess < 0 || guess > 6) {
+    alert("Номер не вірний. Введіть номер від 0-6");
+  } else {
+    guesses += 1;
+
+    if (guess == locations1 || guess == locations2 || guess == locations3) {
+      alert("Ти попав продовжуй!");
+      hits += 1;
+
+      if (hits == 3) { 
+        isSunk = true;
+        alert("Ти потопив мій корабель!");
+      }
+    } else {
+      alert("Промах!");
+    }
+  }
+}
+
+if (guesses == 3) {
+  alert("Ви потопили корабель з першого разу Вітаю! Біжіть поставте какаво з піченькой)")
+} else if (guesses == 4) {
+  alert("Не дуже конєшно но піде, один раз схибили)")
+} else {
+  alert("Йобана жизь більше 4 спроб із семи клітинок..жах, аж срати хочеться..")
+}
+ */
+
+/* 
+function checkIfCanAccessContent(subType) {
+  const canAccessContent = (subType = ("pro" || "vip"));
+  return canAccessContent;
+}
+console.log(canAccessContent); */
+
+
+/* const namber = 5;
+const comparison = namber < 10 || namber >= 5;
+
+console.log(comparison);
+ */
+
+
+/* function checkStorage(available, ordered) {
+  let message;
+  // Change code below this line
+ordered > available ? (
+  message = "Not enough goods in stock!"
+) : (
+  message = "The order is accepted, our manager will contact you"
+);
+  // Change code above this line
+  return message;
+}
+
+console.log(message); */
+
+
+/* const nam = "Alinas";
+console.log(`Name ${nam} is ${nam.length} characters long`); */
+
+
+
+/* const productName = "Repair droid";
+console.log(productName[0]); // "R"
+console.log(productName[5]); // "r"
+console.log(productName[11]); // "d"
+console.log(productName[productName.length - 1]); // "d" */
+
+
+/* function getSubstring(string, length) {
+  const substring = string.slice(length, length); // Change this line
+
+  return substring;
+} */
+/* const string = "Hello world";
+const length = 0;
+
+const substring = string.slice(0, length);
+
+console.log(substring); */
+
+let message = "Curabitur ligula sapien";
+const maxLength = 16;
+
+let result;
+message = length;
+/*   if (message.length <= maxLength) {
+    result = message;
+    console.log(result);
+  } else {
+    message = `${message}...`;
+    console.log(message);
+  } */
+
+  if (message/* .length */ > maxLength) {
+    message = `${message}...`;
+    result = message;
+    console.log(result);
+  } else {
+    result = message;
+    console.log(result);
+  }
