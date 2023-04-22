@@ -531,12 +531,15 @@ const substring = string.slice(0, length);
 
 console.log(substring); */
 
+/* const maxLength = 5;
 let message = "Curabitur ligula sapien";
-const maxLength = 16;
+  if (message.length > maxLength) {
+    console.log(`${message}...`);
+  } else {
+    console.log(message);
+  } */
 
-let result;
-message = length;
-/*   if (message.length <= maxLength) {
+  /*   if (message.length <= maxLnhhhhgength) {
     result = message;
     console.log(result);
   } else {
@@ -544,11 +547,8 @@ message = length;
     console.log(message);
   } */
 
-  if (message/* .length */ > maxLength) {
-    message = `${message}...`;
-    result = message;
-    console.log(result);
-  } else {
-    result = message;
-    console.log(result);
-  }
+  const productName = "Repair droid";
+console.log(productName.slice(0, 4)); // "Repa"
+console.log(productName.slice(3, 9)); // "air dr"
+console.log(productName.slice(0, productName.length)); // "Repair droid"
+console.log(productName.slice(7, productName.length)); // "droid"
